@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,28 +44,37 @@ table {
 }
 /* theme*/
 
+/*nav bar*/
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+   background: linear-gradient(#3339a7, #5c63b2);
+
   }
   
   nav li {
-    float: left;
+    float: center;
   }
   
   nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
   }
   
  nav li a:hover {
     background-color: #111;
+  }
+
+
+  .pimg{
+    width: 105.5rem; 
+    height: auto; 
+    padding: 0;
   }
 
   h1{
@@ -77,6 +87,8 @@ nav ul {
     display : grid ;
     place-items : center ;
   }
+
+
 
   .List_Exp{
     display: flex;
@@ -116,7 +128,7 @@ h2{
     .image-row img {
     width: 10%; 
     height: auto; 
-    margin: 30px; 
+    margin: 1.8rem; 
   }
 
 /*contact */
@@ -198,9 +210,9 @@ h2{
   footer {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     overflow: hidden;
-    background-color: #333;
+    background: linear-gradient(#5c63b2, #3339a7);
     color: white;
     text-align: center;
   }
