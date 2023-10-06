@@ -1,46 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html{ /* sélecteur propriété valeur */
+  font-size: 62.5%;  /* 1.000rem root em 10px */
+  scroll-behavior: smooth;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+body{
+    font: 1.6rem sans-serif;
+    height: 100vh;
+    margin: 0;
+    letter-spacing: 5px;
+    position: relative;
 }
-body {
-	line-height: 1;
+/**{
+    box-sizing: border-box;
+}*/
+h1,h2,h3{
+  margin: 0;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+ul,ol,p,figure{
+margin: 0;
+padding: 0;
 }
 /* theme*/
 
@@ -51,6 +29,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
    background: linear-gradient(#3339a7, #5c63b2);
+   scroll-behavior: smooth;
 
   }
   
@@ -64,6 +43,7 @@ nav ul {
     text-align: center;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    letter-spacing: .2rem;
   }
   
  nav li a:hover {
@@ -72,9 +52,11 @@ nav ul {
 
 
   .pimg{
-    width: 105.5rem; 
+    width: 168.8rem;
     height: auto; 
     padding: 0;
+    max-width: 100%;
+    height: auto;
   }
 
   h1{
@@ -86,6 +68,7 @@ nav ul {
   .photo{
     display : grid ;
     place-items : center ;
+    letter-spacing: .1rem;
   }
 
 
@@ -93,6 +76,14 @@ nav ul {
   .List_Exp{
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    
+  }
+
+  h2{
+    text-align: center;
+    letter-spacing: .1rem;
+    
   }
   
   .logo{
@@ -103,18 +94,17 @@ nav ul {
     text-align: center;
   }
   
-h2{
-    text-align: center;
-    line-height: 3rem;
+
+  body{
+    background-color: rgba(130, 122, 122, 0.579);
   }
-
-
 
   /* englobeur img*/
   .image-container {
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 2%;
     
   }
 /* ligne img*/
@@ -122,7 +112,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
   /* taille img*/
     .image-row img {
@@ -215,4 +204,5 @@ h2{
     background: linear-gradient(#5c63b2, #3339a7);
     color: white;
     text-align: center;
+    margin-top: 1%;
   }
