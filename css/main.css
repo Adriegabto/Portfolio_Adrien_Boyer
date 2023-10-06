@@ -28,8 +28,8 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-   background: linear-gradient(#3339a7, #5c63b2);
-   scroll-behavior: smooth;
+    background: linear-gradient(#3339a7, #5c63b2);
+    scroll-behavior: smooth;
 
   }
   
