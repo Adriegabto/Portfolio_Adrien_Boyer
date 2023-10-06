@@ -13,4 +13,5 @@ Contact avec un mailto pour me contacter
 ## Utilisation de placeholder car les photos doivent etre prises
 
 # Figma du projet
-![Screenshot](figma.png)
+
+![Portfolio] (./asset/figma.png)
