@@ -1,0 +1,117 @@
+@import url(./reset.css);
+/* theme*/
+
+/*nav bar*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(#3339a7, #5c63b2);
+    scroll-behavior: smooth;
+
+  }
+  
+  nav li {
+    float: center;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    letter-spacing: .2rem;
+  }
+  
+ nav li a:hover {
+    background-color: #111;
+  }
+
+
+  .pimg{
+    height: auto; 
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1{
+    text-align: center;
+    line-height: 5rem;
+    font-size: 3rem;
+  }
+
+  .photo{
+    display : grid ;
+    place-items : center ;
+    letter-spacing: .1rem;
+  }
+
+
+
+  .List_Exp{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+  }
+
+  h2{
+    text-align: center;
+    letter-spacing: .1rem;
+    
+  }
+  
+  .logo{
+    margin: 0 10px;
+  }
+
+  .Experiences{
+    text-align: center;
+  }
+  
+
+  body{
+    background-color: rgba(130, 122, 122, 0.579);
+  }
+
+  /* englobeur img*/
+  .image-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2%;
+    
+  }
+
+  section .arbre img{
+    max-width: 100%;
+  }
+
+  .p_mcd{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mcd{
+    display : grid ;
+    place-items : center ;
+  }
+
+
+  /* footer */
+  footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    overflow: hidden;
+    background: linear-gradient(#5c63b2, #3339a7);
+    color: white;
+    text-align: center;
+    margin-top: 1%;
+  }
