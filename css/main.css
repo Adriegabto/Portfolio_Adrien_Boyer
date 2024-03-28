@@ -2,32 +2,59 @@
 /* theme*/
 
 /*nav bar*/
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: linear-gradient(#3339a7, #5c63b2);
-    scroll-behavior: smooth;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #ffffff;
+  padding: 0;
+  
+}
 
-  }
-  
-  nav li {
-    float: center;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    letter-spacing: .2rem;
-  }
-  
- nav li a:hover {
-    background-color: #111;
-  }
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  font: 1.6rem 'Open Sans', sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  padding: 0 0.9rem;
+  text-decoration: none;
+  color: #333333;
+  background-color: #ffffff;
+  border: none;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-link-important {
+  background-color: #5c63b2;
+  color: white;
+}
+
+.navbar-link:not(.navbar-link-important) {
+  background-color: transparent;
+}
+
+.navbar-link:hover {
+  background-color: #5c63b2;
+  color: white;
+}
+
+.navbar-link-important:hover {
+  background-color: #5c63b2;
+}
 
 
   .pimg{
@@ -71,8 +98,8 @@ nav ul {
 
   .Experiences{
     text-align: center;
+    letter-spacing: .1rem;
   }
-  
 
   body{
     background-color: rgba(130, 122, 122, 0.579);
