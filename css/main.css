@@ -5,10 +5,13 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   background-color: #ffffff;
   padding: 0;
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que la barre de navigation est au-dessus du contenu */
 }
 
 .navbar-logo {
@@ -56,20 +59,10 @@
   background-color: #5c63b2;
 }
 
-
-  .pimg{
-    width: 168.8rem;
-    height: auto; 
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-  }
-
-  h1{
-    text-align: center;
-    line-height: 5rem;
-    font-size: 3rem;
-  }
+body {
+  margin: 0;
+  padding-top: 60px;
+}
 
   .photo{
     display : grid ;
@@ -78,14 +71,22 @@
   }
 
 
-
-  .List_Exp{
+  .container {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    
+    justify-content: flex-start; /* Centrage à gauche */
   }
-
+  
+  .list-container {
+    max-width: 50%; /* Répartition égale entre les deux listes */
+  }
+  
+  .List_Exp {
+    padding: 20px; /* Espacement à l'intérieur du cadre */
+    border: 2px solid #333; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    text-align: left; /* Alignement du texte à gauche */
+    margin: 0 auto; /* Centrage horizontal */
+  }
   h2{
     text-align: center;
     letter-spacing: .1rem;
@@ -99,10 +100,6 @@
   .Experiences{
     text-align: center;
     letter-spacing: .1rem;
-  }
-
-  body{
-    background-color: rgba(130, 122, 122, 0.579);
   }
 
   /* englobeur img*/
