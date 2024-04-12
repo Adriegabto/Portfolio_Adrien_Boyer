@@ -5,7 +5,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #0f0f0f;
   padding: 0;
   position: fixed;
   top: 0;
@@ -17,16 +17,18 @@
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: black;
+  color: #7D4FFE;
   display: flex;
   align-items: center;
   padding: 20px 20px;
   font: 1.6rem 'Open Sans', sans-serif;
+
 }
 
 .navbar-links {
   display: flex;
   align-items: stretch;
+
 }
 
 .navbar-link {
@@ -34,7 +36,7 @@
   align-items: center;
   padding: 0 0.9rem;
   text-decoration: none;
-  color: #333333;
+  color: #7D4FFE;
   background-color: #ffffff;
   border: none;
   height: 100%;
@@ -42,7 +44,7 @@
 }
 
 .navbar-link-important {
-  background-color: #5c63b2;
+  background-color: #7D4FFE;
   color: white;
 }
 
@@ -51,42 +53,110 @@
 }
 
 .navbar-link:hover {
-  background-color: #5c63b2;
+  background-color: #7D4FFE;
   color: white;
 }
 
 .navbar-link-important:hover {
-  background-color: #5c63b2;
+  background-color: #7D4FFE;
 }
 
-body {
-  margin: 0;
-  padding-top: 60px;
-}
-
-  .photo{
+.desc-photo{
     display : grid ;
     place-items : center ;
     letter-spacing: .1rem;
+    text-align: center;
+    
+
   }
+  
+  .photo {
+    padding-top: 60px;
+      display: flex;
+      justify-content: center; /* Centre l'image horizontalement */
+      align-items: center; /* Centre l'image verticalement */
+      height: 200px; /* Hauteur du conteneur, ajustez selon vos besoins */
+    }
+    
+    .photo img {
+      width: 130px; /* Largeur souhaitée */
+      height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+    }
+  
 
+    body{
+      background-color: #242424;
+    }
 
-  .container {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    letter-spacing: -0.25px;
+  }
+  
+  /* Expériences */
+  .Experiences { 
+    font-family: 'Space Mono', monospace; 
     display: flex;
-    justify-content: flex-start; /* Centrage à gauche */
+    flex-direction: column;
+    max-width: 800px;
+    padding: 32px;
+    margin: 60px auto;
+    border: 1px solid #eee;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.16);
+    color: #7D4FFE;
+    background-color: #0f0f0f;
   }
   
-  .list-container {
-    max-width: 50%; /* Répartition égale entre les deux listes */
+  /* Liste ordonnée */
+  ol { 
+    padding-left: 20px; 
   }
   
-  .List_Exp {
-    padding: 20px; /* Espacement à l'intérieur du cadre */
-    border: 2px solid #333; /* Bordure */
-    border-radius: 10px; /* Coins arrondis */
-    text-align: left; /* Alignement du texte à gauche */
-    margin: 0 auto; /* Centrage horizontal */
+  /* Éléments de liste */
+
+
+  li { 
+    color: #7D4FFE; 
+    padding-left: 0px;
+    margin-top: 24px;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
   }
+  
+  /* Marqueurs de liste */
+  li:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute;
+    top: -12px;
+    left: -40px;
+    color: #7D4FFE;
+  }
+  
+  /* Texte en gras */
+  strong { 
+    color: #6a35ff; 
+  }
+  
+  /* Alternance de couleurs dans la liste */
+  ol.alternating-colors li:nth-child(odd):before { 
+    border-color: #0BAD02; 
+  }
+  
+  ol.alternating-colors li:nth-child(even):before { 
+    border-color: #2378D5; 
+  }
+
+
+
+  
   h2{
     text-align: center;
     letter-spacing: .1rem;
@@ -118,7 +188,7 @@ body {
   }
   /* taille img*/
     .image-row img {
-    width: 10%; 
+    width: 8%; 
     height: auto; 
     margin: 1.8rem; 
   }
@@ -170,7 +240,7 @@ body {
     top: 180%;
     width: 160%;
     height: 190%;
-    background-color: #009087;
+    background-color: #7D4FFE;
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
