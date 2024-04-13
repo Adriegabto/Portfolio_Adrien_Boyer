@@ -2,63 +2,24 @@
 /* theme*/
 
 /*nav bar*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #ffffff;
-  padding: 0;
-  
+@import url(navbar.css);
+
+
+body{
+  padding-top: 60px;
+  background-color: #16191d;
 }
 
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  display: flex;
-  align-items: center;
-  padding: 20px 20px;
-  font: 1.6rem 'Open Sans', sans-serif;
+* {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizelegibility;
+letter-spacing: -0.25px;
 }
-
-.navbar-links {
-  display: flex;
-  align-items: stretch;
-}
-
-.navbar-link {
-  display: flex;
-  align-items: center;
-  padding: 0 0.9rem;
-  text-decoration: none;
-  color: #333333;
-  background-color: #ffffff;
-  border: none;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.navbar-link-important {
-  background-color: #5c63b2;
-  color: white;
-}
-
-.navbar-link:not(.navbar-link-important) {
-  background-color: transparent;
-}
-
-.navbar-link:hover {
-  background-color: #5c63b2;
-  color: white;
-}
-
-.navbar-link-important:hover {
-  background-color: #5c63b2;
-}
-
 
 
   .pimg{
+    padding-top: 60px;
     height: auto; 
     padding: 0;
     max-width: 100%;
@@ -71,21 +32,6 @@
     text-align: center;
     line-height: 5rem;
     font-size: 3rem;
-  }
-
-  .photo{
-    display : grid ;
-    place-items : center ;
-    letter-spacing: .1rem;
-  }
-
-
-
-  .List_Exp{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    
   }
 
   h2{
@@ -103,9 +49,6 @@
   }
   
 
-  body{
-    background-color: rgba(130, 122, 122, 0.579);
-  }
 
   /* englobeur img*/
   .image-container {

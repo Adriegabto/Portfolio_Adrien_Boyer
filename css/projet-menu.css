@@ -2,63 +2,23 @@
 /* theme*/
 
 /*nav bar*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  background-color: #ffffff;
-  padding: 0;
-  
+@import url(navbar.css);
+
+body{
+  background-color: #16191d;
 }
 
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  display: flex;
-  align-items: center;
-  padding: 20px 20px;
-  font: 1.6rem 'Open Sans', sans-serif;
-}
-
-.navbar-links {
-  display: flex;
-  align-items: stretch;
-}
-
-.navbar-link {
-  display: flex;
-  align-items: center;
-  padding: 0 0.9rem;
-  text-decoration: none;
-  color: #333333;
-  background-color: #ffffff;
-  border: none;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.navbar-link-important {
-  background-color: #5c63b2;
-  color: white;
-}
-
-.navbar-link:not(.navbar-link-important) {
-  background-color: transparent;
-}
-
-.navbar-link:hover {
-  background-color: #5c63b2;
-  color: white;
-}
-
-.navbar-link-important:hover {
-  background-color: #5c63b2;
+* {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizelegibility;
+letter-spacing: -0.25px;
 }
 
 .button-container {
     text-align: center; /* Centrage horizontal */
     margin-top: 50px; /* Espacement du haut */
+    padding-top: 60px;
 }
 
 .button {

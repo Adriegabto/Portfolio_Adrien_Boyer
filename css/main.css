@@ -2,76 +2,7 @@
 /* theme*/
 
 /*nav bar*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(22, 25, 29, 0.5);
-  backdrop-filter: blur(10px);
-  text-decoration: none;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-
-.navbar-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  padding: 20px 20px;
-  font: 1.6rem 'Open Sans', sans-serif;
-}
-
-.navbar-logo:hover {
-  background-color: #212529;
-}
-
-.navbar-links {
-  display: flex;
-  align-items: stretch;
-  text-decoration: none;
-
-}
-
-.navbar-link {
-  display: flex;
-  align-items: center;
-  padding: 0 0.9rem;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #ffffff;
-  border: none;
-  height: 100%;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-.navbar-link-important {
-  background-color: rgba(22, 25, 29, 0.5);
-}
-
-.navbar-link:not(.navbar-link-important) {
-  background-color: transparent;
-}
-
-.navbar-link:hover {
-  background-color: #212529;
-}
-
-.navbar-link-important:hover {
-  background-color: #212529;
-}
-
+@import url(navbar.css);
 
 .desc-photo{
     display : grid ;
