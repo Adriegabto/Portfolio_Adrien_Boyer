@@ -5,29 +5,41 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #0f0f0f;
   padding: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Assure que la barre de navigation est au-dessus du contenu */
+  z-index: 1000;
+  background: rgba(22, 25, 29, 0.5);
+  backdrop-filter: blur(10px);
+  text-decoration: none;
 }
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 
 .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #7D4FFE;
+  color: #ffffff;
   display: flex;
   align-items: center;
   padding: 20px 20px;
   font: 1.6rem 'Open Sans', sans-serif;
+}
 
+.navbar-logo:hover {
+  background-color: #212529;
 }
 
 .navbar-links {
   display: flex;
   align-items: stretch;
+  text-decoration: none;
 
 }
 
@@ -36,16 +48,16 @@
   align-items: center;
   padding: 0 0.9rem;
   text-decoration: none;
-  color: #7D4FFE;
+  color: #ffffff;
   background-color: #ffffff;
   border: none;
   height: 100%;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .navbar-link-important {
-  background-color: #7D4FFE;
-  color: white;
+  background-color: rgba(22, 25, 29, 0.5);
 }
 
 .navbar-link:not(.navbar-link-important) {
@@ -53,21 +65,20 @@
 }
 
 .navbar-link:hover {
-  background-color: #7D4FFE;
-  color: white;
+  background-color: #212529;
 }
 
 .navbar-link-important:hover {
-  background-color: #7D4FFE;
+  background-color: #212529;
 }
+
 
 .desc-photo{
     display : grid ;
     place-items : center ;
     letter-spacing: .1rem;
     text-align: center;
-    
-
+    color: #ffffff;
   }
   
   .photo {
@@ -81,11 +92,12 @@
     .photo img {
       width: 130px; /* Largeur souhaitée */
       height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+      padding-bottom: 30px;
     }
   
 
     body{
-      background-color: #242424;
+      background-color: #16191d;
     }
 
   * {
@@ -103,10 +115,14 @@
     max-width: 800px;
     padding: 32px;
     margin: 60px auto;
-    border: 1px solid #eee;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.16);
-    color: #7D4FFE;
-    background-color: #0f0f0f;
+    color: #ffffff;
+    border-radius: 15px;
+    
+  }
+
+  .Experiences:hover {
+    background-color: #212529;
   }
   
   /* Liste ordonnée */
@@ -118,7 +134,7 @@
 
 
   li { 
-    color: #7D4FFE; 
+    color: #ffffff; 
     padding-left: 0px;
     margin-top: 24px;
     position: relative;
@@ -137,12 +153,12 @@
     position: absolute;
     top: -12px;
     left: -40px;
-    color: #7D4FFE;
+    color: #ffffff;
   }
   
   /* Texte en gras */
   strong { 
-    color: #6a35ff; 
+    color: #ffffff; 
   }
   
   /* Alternance de couleurs dans la liste */
@@ -160,6 +176,7 @@
   h2{
     text-align: center;
     letter-spacing: .1rem;
+    color: #ffffff;
     
   }
   
@@ -274,7 +291,6 @@
     margin: 0;
     padding: 1rem;
     overflow: hidden;
-    background: linear-gradient(#5c63b2, #3339a7);
     color: white;
     text-align: center;
     margin-top: 1%;
