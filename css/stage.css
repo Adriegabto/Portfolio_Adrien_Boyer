@@ -1,0 +1,73 @@
+@import url(reset.css);
+@import url(navbar.css);
+
+.desc-intro{
+    display : grid ;
+    place-items : center ;
+    letter-spacing: .1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .photo-intro {
+      padding-top: 60px;
+      display: flex;
+      justify-content: center; /* Centre l'image horizontalement */
+      align-items: center; /* Centre l'image verticalement */
+      height: 200px; /* Hauteur du conteneur, ajustez selon vos besoins */
+    }
+    
+    .photo-intro img {
+      width: 130px; /* Largeur souhaitée */
+      height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
+      padding-bottom: 30px;
+    }
+
+    #images {
+        text-align: center;
+    }
+    
+    .image-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image1, .image2, .image3 {
+        width: 80%; /* Largeur du conteneur */
+        max-width: 600px; /* Limite la largeur maximale du conteneur */
+        padding: 20px; /* Espace intérieur */
+        border-radius: 10px; /* Rayon de la bordure ronde */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+        margin-bottom: 20px; /* Espacement entre les conteneurs */
+    }
+    
+    .image-gallery p {
+        padding-top: 20px;
+        width: 100%; /* Ajuste la largeur du paragraphe à la taille du conteneur */
+        max-width: 500px; /* Limite la largeur maximale du paragraphe */
+        text-align: left;
+        margin-bottom: 20px; /* Espacement entre les paragraphes */
+        color: #ffffff;
+    }
+    
+    .image1:hover, .image2:hover, .image3:hover {
+        background-color: #212529; /* Couleur de fond au survol */
+    }
+    
+    #conclusion{
+        place-items : center ;
+        letter-spacing: .1rem;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    footer {
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem;
+        overflow: hidden;
+        color: white;
+        text-align: center;
+        margin-top: 1%;
+      }
