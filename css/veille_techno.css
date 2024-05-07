@@ -1,2 +1,48 @@
 @import url(reset.css);
 @import url(navbar.css);
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Changement de couleur de police en blanc */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style pour les titres */
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style pour les listes */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour les éléments de la veille technologique */
+.techno-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #fff; /* Ajout de bordures blanches */
+}
+
+/* Style pour les médias */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .techno-item {
+        padding: 15px;
+    }
+}

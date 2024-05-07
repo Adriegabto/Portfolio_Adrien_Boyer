@@ -21,6 +21,11 @@
       width: 130px; /* Largeur souhaitée */
       height: auto; /* Hauteur ajustée automatiquement pour maintenir les proportions */
       padding-bottom: 30px;
+      text-align: justify;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      
     }
 
     #images {
@@ -46,7 +51,10 @@
         padding-top: 20px;
         width: 100%; /* Ajuste la largeur du paragraphe à la taille du conteneur */
         max-width: 500px; /* Limite la largeur maximale du paragraphe */
-        text-align: left;
+        text-align: justify;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
         margin-bottom: 20px; /* Espacement entre les paragraphes */
         color: #ffffff;
     }
@@ -55,11 +63,21 @@
         background-color: #212529; /* Couleur de fond au survol */
     }
     
-    #conclusion{
+    .container {
+        max-width: 800px; /* Limite la largeur du conteneur */
+        margin: 0 auto; /* Centre le conteneur horizontalement */
+        padding: 20px; /* Ajoute un espace intérieur */
+    }
+    .conclusion{
         place-items : center ;
         letter-spacing: .1rem;
         text-align: center;
         color: #ffffff;
+        text-align: justify;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        
     }
 
     footer {
